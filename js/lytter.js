@@ -22,7 +22,7 @@ class BogstavSpiller {
   }
 
   sætStem(ny) {
-    if (ny != 'else' && ny != 'anne-katrine') throw 'Intet såden stem';
+    if (!["else", "anne-katrine", "jonas"].includes(ny)) throw 'Intet såden stem';
     this.stem = ny;
   }
 
