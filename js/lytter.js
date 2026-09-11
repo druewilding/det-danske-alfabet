@@ -22,7 +22,7 @@ class BogstavSpiller {
   }
 
   sætStem(ny) {
-    if (!["else", "anne-katrine", "jonas"].includes(ny)) throw 'Intet såden stem';
+    if (!["else", "anne-katrine", "jonas"].includes(ny)) throw 'Stemmen findes ikke';
     this.stem = ny;
   }
 
