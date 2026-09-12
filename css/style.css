@@ -1,5 +1,12 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #E31836;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 #audio {
@@ -55,4 +62,21 @@ body {
 
 .person.active {
   border: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2em 0;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
 }
