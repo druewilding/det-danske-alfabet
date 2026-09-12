@@ -56,3 +56,23 @@ body {
 .person.active {
   border: 10px solid rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 600px) {
+  #letter {
+    font-size: 4em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  #people {
+    margin: 1em;
+  }
+
+  .person,
+  .person.active {
+    width: 80px;
+    margin: 0.5em;
+    border-width: 5px;
+    border-radius: 13px;
+  }
+}
