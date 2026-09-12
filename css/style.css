@@ -18,14 +18,14 @@ body {
 }
 
 #letter {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: clamp(20px, 5vw, 50px);
+  margin-bottom: clamp(20px, 5vw, 50px);
   border: 0;
   outline: none;
   background-color: transparent;
   text-align: center;
   color: #fff;
-  font-size: 12em;
+  font-size: clamp(3em, 10vw, 12em);
   /* font-family: sans-serif; gør "å" at overflow kassen */
   text-shadow: 2px 2px 10px #000;
   width: 100%;
@@ -43,7 +43,7 @@ body {
 
 #people {
   text-align: center;
-  margin: 2em;
+  margin: clamp(1em, 4vw, 2em);
   padding: 0;
 }
 
@@ -53,15 +53,15 @@ body {
 }
 
 .person {
-  margin: 1em;
-  width: 300px;
-  border-radius: 50px;
-  border: 10px solid #E31836;
+  margin: clamp(4px, 1vw, 16px);
+  width: clamp(64px, 18vw, 300px);
+  border-radius: 16.67%;
+  border: clamp(3px, 1vw, 10px) solid #E31836;
   cursor: pointer;
 }
 
 .person.active {
-  border: 10px solid rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -81,22 +81,23 @@ footer a:hover {
   color: #ccc;
 }
 
-@media (max-width: 600px) {
+@media (max-height: 500px) {
   #letter {
-    font-size: 4em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: clamp(2em, 8vh, 4em);
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   #people {
-    margin: 1em;
+    margin: 0.5em;
   }
 
-  .person,
-  .person.active {
-    width: 80px;
-    margin: 0.5em;
-    border-width: 5px;
-    border-radius: 13px;
+  .person {
+    width: clamp(48px, 12vh, 120px);
+    margin: 4px;
+  }
+
+  footer {
+    padding: 0.5em 0;
   }
 }
